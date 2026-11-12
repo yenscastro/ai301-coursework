@@ -55,10 +55,9 @@ happened; these entries are the toolkit's own timeline.
 All four entries are graded. Keep every heading below, and fill each
 one in the week it belongs to.
 
-**Unit 5: [one line on the tool work]**
+### Unit 5: Building the issue-scout
 
-[2-4 sentences: what you built (the scout, your strategy), what broke
-or fell short, what changed because of it.]
+I built the issue-scout by writing a search-strategy.md with three gh search issues queries (Python, TypeScript, JavaScript) and a set of ranking filters to surface open-source issues matching my profile. The first scan revealed a flaw: without a per-repo cap, one maintainer's issue batch filled the entire top-5, and 4 of the issues secretly depended on other open PRs. I fixed this by adding a "max 1 per repo" filter and logging the dependency tension. By the final scan, the scout successfully found openslop#1231, a TypeScript/React issue with an explicit AI-friendly policy that perfectly fits my frontend goals.
 
 **Unit 6: [one line on the tool work]**
 
